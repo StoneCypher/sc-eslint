@@ -1,0 +1,30 @@
+{
+  "rules":{
+    "no-comma-dangle"         : 2,
+    "no-cond-assign"          : 0,
+    "no-console"              : 0,
+    "no-constant-condition"   : 1,
+    "no-control-regex"        : 1,
+    "no-debugger"             : 1,
+    "no-dupe-keys"            : 2,
+    "no-empty"                : 1,
+    "no-empty-class"          : 2,
+    "no-ex-assign"            : 2,
+    "no-extra-boolean-cast"   : 1,
+    "no-extra-parens"         : 0,
+    "no-extra-semi"           : 2,
+    "no-func-assign"          : 2,
+    "no-inner-declarations"   : 1,
+    "no-invalid-regexp"       : 2,
+    "no-irregular-whitespace" : 2,
+    "no-negated-in-lhs"       : 2,
+    "no-obj-calls"            : 2,
+    "no-regex-spaces"         : 1,
+    "no-reserved-keys"        : 1,
+    "no-sparse-arrays"        : 1,
+    "no-unreachable"          : 2,
+    "use-isnan"               : 2,
+    "valid-jsdoc"             : 2,
+    "valid-typeof"            : 2
+  }
+}
