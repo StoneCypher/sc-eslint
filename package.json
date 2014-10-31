@@ -19,7 +19,9 @@
     "eslint": "*"
   },
   "devDependencies": {
-    "vows": "*"
+    "vows": "*",
+    "gulp": "*",
+    "gulp-eslint": "*"
   },
   "main": "eslint.js",
   "engines": {
