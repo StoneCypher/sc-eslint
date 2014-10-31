@@ -140,10 +140,10 @@
     "spaced-line-comment"        : 1,
     "wrap-regex"                 : 0,
 
-    "max-depth"                  : 0,
-    "max-len"                    : 0,
+    "max-depth"                  : [1, 5],
+    "max-len"                    : [1, 120, 4],
     "max-params"                 : 0,
-    "max-statements"             : 0,
+    "max-statements"             : [1, 25],
     "no-bitwise"                 : 0,
     "no-plusplus"                : 0
 
