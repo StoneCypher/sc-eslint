@@ -77,9 +77,9 @@
     "wrap-iife"                  : 0,
     "yoda"                       : 1,
 
-    "global-strict"              : 0,
-    "no-extra-strict"            : 0,
-    "strict"                     : 0,
+    "global-strict"              : 1,
+    "no-extra-strict"            : 1,
+    "strict"                     : 2,
 
     "no-catch-shadow"            : 0,
     "no-delete-var"              : 0,
