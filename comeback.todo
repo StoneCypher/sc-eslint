@@ -1,0 +1,4 @@
+no-inner-declarations
+complexity
+no-empty-label
+lone-blocks - interferes with jsx?
