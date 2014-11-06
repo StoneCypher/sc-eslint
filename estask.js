@@ -14,8 +14,7 @@
 
 "use strict";
 
-var gulp  = require('gulp'),
-    shell = require('gulp-shell');
+var shell = require('gulp-shell');
 
 
 
@@ -27,12 +26,11 @@ module.exports = function(Options) {
 
     Options           = Options          || {};
     Options.target    = Options.target   || "*.js";
-    Options.taskname  = Options.taskname || "eslint";
     Options.config    = Options.taskname || DefaultConfig;
 
     var Task          = "eslint " + Options.target +
                         " -c "    + Options.config;
 
-    return gulp.task(Options.taskname, shell.task(Task));
+    return shell.task(Task);
 
 };
