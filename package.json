@@ -2,7 +2,7 @@
   "author": "John Haugeland",
   "name": "sc-eslint",
   "description": "A small wrapper of eslint, pre-configured to StoneCypher's preferences. MIT licensed.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": {
     "url": "https://github.com/StoneCypher/sc-eslint.git"
   },
