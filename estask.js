@@ -25,11 +25,12 @@ module.exports = function(Options) {
     var DefaultConfig = "node_modules/sc-eslint/sc-eslint-config.json";
 
     Options           = Options          || {};
-    Options.target    = Options.target   || "*.js";
+    Options.targets   = Options.target   || "*.js";
     Options.config    = Options.taskname || DefaultConfig;
 
-    var Task          = "eslint " + Options.target +
-                        " -c "    + Options.config;
+    var Task          = "eslint " +
+                        " -c "    + Options.config +
+                                    Options.target;
 
     return shell.task(Task);
 
