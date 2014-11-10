@@ -25,17 +25,16 @@ This is two things:
 1. Trivially simple gulp task
 
 ```javascript
-var gulp   = require('gulp'),
-    eslint = require('gulp-eslint'),
-    lrules = require('./sc-eslint-config.json');
+var gulp     = require("gulp"),
+    linttask = require("sc-eslint/estask.js");
 
-gulp.task('eslint', function() {
-  gulp.src('./**/this-case-should-*.js')
-      .pipe(eslint({ rules: lrules }))
-      .pipe(eslint.format());
-});
+global.errorMessage = "";
 
-gulp.task('default', ['eslint']);
+gulp.task("lint", linttask({
+  "targets" : "gulpfile.js lib/flocks.js test/enforce-tests.js"
+}));
+
+gulp.task("default", ["lint"]);
 ```
 
 
