@@ -42,10 +42,22 @@ gulp.task('default', ['eslint']);
 
 
 
+Why?
+----
+
+Because this way, as [eslint](http://eslint.org/) gets stronger, as my preferences evolve, etc, all I need to do is to
+keep one module up to date, then all dependents will be brought into line.
+
+Which is pretty sweet, if you think about it.
+
+
+
+
+
 But I have different preferences
 --------------------------------
 
-Great!  Don't we all?  `:)`
+Great!  Don't we all?  `:)`  Make one for yourself!  Here's how:
 
 1. [Fork this repo](https://github.com/StoneCypher/sc-eslint/fork)
 1. Copy `sc-eslint-config.json` to your own config file
