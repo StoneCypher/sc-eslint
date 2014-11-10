@@ -47,7 +47,7 @@ But I have different preferences
 
 Great!  Don't we all?  `:)`
 
-1. Fork this repo
+1. [Fork this repo](https://github.com/StoneCypher/sc-eslint/fork)
 1. Copy `sc-eslint-config.json` to your own config file
 1. Change the contents - every rule is spelled out in that file
 1. Change what `lrules` points to, if using the gulp task
@@ -61,4 +61,4 @@ Great!  Don't we all?  `:)`
 Polemic
 =======
 
-`choprify` is MIT licensed, because viral licenses and newspeak language modification are evil. Free is only free when it's free for everyone.
+`sc-eslint` is MIT licensed, because viral licenses and newspeak language modification are evil. Free is only free when it's free for everyone.
