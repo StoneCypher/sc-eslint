@@ -24,17 +24,26 @@ This is two things:
 1. drop and run `eslint -c node_modules/sc-eslint/sc-eslint-config.json *.js`
 1. Trivially simple gulp task
 
+
+
+
+
+Gulp task, you say?
+-------------------
+
+Trivially simple.
+
 ```javascript
-var gulp     = require("gulp"),
-    linttask = require("sc-eslint/estask.js");
+var lint = require("sc-eslint");
+var tgts = "gulpfile.js estask.js";
 
-global.errorMessage = "";
+lint.gulpreg(gulp, { "targets" : tgts });
+```
 
-gulp.task("lint", linttask({
-  "targets" : "gulpfile.js lib/flocks.js test/enforce-tests.js"
-}));
+And now you have a gulp task named `lint`, which you may use like so:
 
-gulp.task("default", ["lint"]);
+```javascript
+gulp.task('default', ['lint']);
 ```
 
 

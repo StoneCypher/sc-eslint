@@ -25,7 +25,7 @@ function task(Options) {
     var DefaultConfig = "node_modules/sc-eslint/sc-eslint-config.json";
 
     Options           = Options          || {};
-    Options.targets   = (Options.targets || "*.js lib/*.js") + " --no-ignore";
+    Options.targets   = (Options.targets || "gulpfile.js") + " --no-ignore";
     Options.config    = Options.config   || DefaultConfig;
 
     var Task          = "eslint" +
