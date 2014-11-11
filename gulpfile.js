@@ -1,14 +1,9 @@
 
 global.errorMessage = '';
 
-var gulp   = require('gulp'),
-    eslint = require('gulp-eslint'),
-    lrules = require('./sc-eslint-config.json');
+var gulp = require('gulp'),
+    lint = require('./estask.js'),
+    tgts = "gulpfile.js estask.js";
 
-gulp.task('eslint', function() {
-  gulp.src('./**/this-case-should-*.js')
-      .pipe(eslint({ rules: lrules }))
-      .pipe(eslint.format());
-});
-
-gulp.task('default', ['eslint']);
+lint.gulpreg(gulp, { "targets" : tgts, "config" : './sc-eslint-config.json' });
+gulp.task('default', ['lint']);

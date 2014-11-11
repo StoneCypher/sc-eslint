@@ -20,19 +20,47 @@ var shell = require('gulp-shell');
 
 
 
-module.exports = function(Options) {
+function task(Options) {
 
     var DefaultConfig = "node_modules/sc-eslint/sc-eslint-config.json";
 
     Options           = Options          || {};
     Options.targets   = (Options.targets || "*.js lib/*.js") + " --no-ignore";
-    Options.config    = Options.taskname || DefaultConfig;
+    Options.config    = Options.config   || DefaultConfig;
 
     var Task          = "eslint" +
                         " -c "   + Options.config +
                         " "      + Options.targets;
     console.log(Task);
 
-    return shell.task(Task);
+    return shell.task(Task, {quiet: false});
+
+}
+
+
+
+
+
+function gulpreg(Gulp, Options) {
+
+    var Taskname = Options.taskname || "lint",
+        Targets  = Options.targets  || "gulpfile.js",
+        Config   = Options.config;
+
+    Gulp.task(Taskname, task({ 
+        "targets" : Targets,
+        "config"  : Config
+    }));
+
+}
+
+
+
+
+
+module.exports = {
+
+    "gulpreg" : gulpreg,
+    "task"    : task
 
 };
