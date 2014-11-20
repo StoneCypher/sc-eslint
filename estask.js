@@ -31,7 +31,6 @@ function task(Options) {
     var Task          = "eslint" +
                         " -c "   + Options.config +
                         " "      + Options.targets;
-    console.log(Task);
 
     return shell.task(Task, {quiet: false});
 
@@ -47,7 +46,7 @@ function gulpreg(Gulp, Options) {
         Targets  = Options.targets  || "gulpfile.js",
         Config   = Options.config;
 
-    Gulp.task(Taskname, task({ 
+    Gulp.task(Taskname, task({
         "targets" : Targets,
         "config"  : Config
     }));
