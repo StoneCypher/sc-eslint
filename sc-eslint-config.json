@@ -136,7 +136,6 @@
     "space-in-parens"            : 0,
     "space-infix-ops"            : 0,
     "space-return-throw-case"    : 2,
-    "space-unary-ops"            : 2,
     "spaced-line-comment"        : 1,
     "wrap-regex"                 : 0,
 
