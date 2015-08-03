@@ -2,7 +2,7 @@
   "author": "John Haugeland",
   "name": "sc-eslint",
   "description": "A small wrapper of eslint, pre-configured to StoneCypher's preferences. MIT licensed.",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "repository": {
     "url": "https://github.com/StoneCypher/sc-eslint.git"
   },
@@ -28,10 +28,7 @@
     "gulp": "*",
     "gulp-eslint": "*"
   },
-  "peerDependencies": {
-    "gulp-eslint": "*"
-  },
-  "main": "eslint.js",
+  "main": "estask.js",
   "engines": {
     "node": "*"
   },
