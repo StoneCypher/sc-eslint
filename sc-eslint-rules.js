@@ -2,7 +2,7 @@ module.exports = {
 
   "rules" : {
 
-    "no-comma-dangle"            : 2,
+   "comma-dangle"               : [2, "never"],
     "no-cond-assign"             : 0,
     "no-console"                 : 0,
     "no-constant-condition"      : 1,
@@ -10,7 +10,7 @@ module.exports = {
     "no-debugger"                : 1,
     "no-dupe-keys"               : 2,
     "no-empty"                   : 1,
-    "no-empty-class"             : 2,
+    "no-empty-character-class"   : 2,
     "no-ex-assign"               : 2,
     "no-extra-boolean-cast"      : 1,
     "no-extra-parens"            : 0,
@@ -22,7 +22,6 @@ module.exports = {
     "no-negated-in-lhs"          : 2,
     "no-obj-calls"               : 2,
     "no-regex-spaces"            : 1,
-    "no-reserved-keys"           : 1,
     "no-sparse-arrays"           : 1,
     "no-unreachable"             : 2,
     "use-isnan"                  : 2,
@@ -77,8 +76,6 @@ module.exports = {
     "wrap-iife"                  : 0,
     "yoda"                       : 1,
 
-    "global-strict"              : 1,
-    "no-extra-strict"            : 1,
     "strict"                     : 2,
 
     "no-catch-shadow"            : 2,
@@ -117,7 +114,7 @@ module.exports = {
     "no-mixed-spaces-and-tabs"   : 2,
     "no-nested-ternary"          : 0,
     "no-new-object"              : 1,
-    "no-space-before-semi"       : 2,
+    "semi-spacing"               : 2,
     "no-spaced-func"             : 2,
     "no-ternary"                 : 0,
     "no-trailing-spaces"         : 1,
@@ -130,13 +127,12 @@ module.exports = {
     "quote-props"                : [1, "always"],
     "semi"                       : [2, "always"],
     "sort-vars"                  : 0,
-    "space-after-keywords"       : [2, "always"],
     "space-before-blocks"        : [2, "always"],
     "space-in-brackets"          : 0,
     "space-in-parens"            : 0,
     "space-infix-ops"            : 0,
-    "space-return-throw-case"    : 2,
-    "spaced-line-comment"        : 1,
+    "keyword-spacing"            : 2,
+    "spaced-comment"             : [1, "always"],
     "wrap-regex"                 : 0,
 
     "max-depth"                  : [1, 5],
@@ -147,4 +143,4 @@ module.exports = {
     "no-plusplus"                : 0
 
   }
-};
+}
