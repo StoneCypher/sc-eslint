@@ -1,5 +1,9 @@
 {
-  "author": "John Haugeland",
+  "author": {
+    "name": "John Haugeland",
+    "email": "stonecypher@gmail.com",
+    "url": "http://fullof.bs/"
+  },
   "name": "sc-eslint",
   "description": "A small wrapper of eslint, pre-configured to StoneCypher's preferences. MIT licensed.",
   "version": "1.3.7",
@@ -23,7 +27,8 @@
   ],
   "dependencies": {
     "eslint": "*",
-    "gulp-shell": "*"
+    "gulp-shell": "*",
+    "snyk": "^1.319.1"
   },
   "devDependencies": {
     "vows": "*",
@@ -31,15 +36,13 @@
     "gulp-eslint": "*"
   },
   "main": "estask.js",
-  "author": {
-    "name" : "John Haugeland",
-    "email" : "stonecypher@gmail.com",
-    "url" : "http://fullof.bs/"
-  },
   "engines": {
     "node": "*"
   },
   "scripts": {
-    "test": "vows test/* --spec"
-  }
+    "test": "vows test/* --spec",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
